@@ -26,6 +26,11 @@ int main()
 	* 
 	* cout << "The chances of this combination is << prob << "%. " << endl;
 	*/
+
+
+
+
+
 }
 
 string langMenu()
