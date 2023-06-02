@@ -28,7 +28,6 @@ int main()
 	*/
 
 
-	//Test
 }
 
 string langMenu()
