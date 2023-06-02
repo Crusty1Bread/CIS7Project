@@ -2,16 +2,19 @@
 #include <cmath>
 
 using namespace std;
-// did it work??
-// did it work now
+
 string langMenu();
 string specialMenu();
 
 int main()
 {
+	// variables
+	int specialty;
+	// arrays
 	string country[] = { "United States", "United Kingdom", "Mexico", "Costa Rica", "Saudi Arabia", "Afghanistan", "France", "Haiti", "Italy", "Sicily" };
 	string languages[] = { "English", "Spanish", "Arabic", "French", "Italian" };
 
+	specialty = specialMenu();
 
 	/*string language, specialty;
 	*
@@ -29,10 +32,6 @@ int main()
 
 }
 
-//lllllllll 
-// hhhh
-// hhhhhhhhhhhhhhhhhh
-
 string langMenu()
 {
 	cout << "Language Options:\n--------------\n";
@@ -43,8 +42,22 @@ string langMenu()
 
 string specialMenu()
 {
+	// variables
+	int sOption;
 	//Print all medical specialties. Request user input for medical specialty.
-	//
+	cout << "Specialty Options:" << endl;
+	cout << "-------------------" << endl;
+	cout << "1. Cardiology" << endl;
+	cout << "2. Infectious Disease" << endl;
+	cout << "3. Occupational Medicine" << endl;
+	cout << "4. Pediatrics" << endl;
+	cout << "5. Maternal-Fetal Medicine" << endl;
+	cout << "-------------------" << endl;
+	// Request user input
+	cout << "Please select an option (1 - 5): ";
+	cin >> sOption;
+
+
 }
 
 void returnCountry(string arr[])
