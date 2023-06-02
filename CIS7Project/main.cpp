@@ -2,7 +2,8 @@
 #include <cmath>
 
 using namespace std;
-
+// did it work??
+// did it work now
 string langMenu();
 string specialMenu();
 
@@ -28,7 +29,7 @@ int main()
 
 }
 
-//lllllllll
+//lllllllll 
 // hhhh
 // hhhhhhhhhhhhhhhhhh
 
