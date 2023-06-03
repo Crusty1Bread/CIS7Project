@@ -9,12 +9,13 @@ string specialMenu();
 int main()
 {
 	// variables
-	int specialty;
+	string specialty;
+
 	// arrays
 	string country[] = { "United States", "United Kingdom", "Mexico", "Costa Rica", "Saudi Arabia", "Afghanistan", "France", "Haiti", "Italy", "Sicily" };
 	string languages[] = { "English", "Spanish", "Arabic", "French", "Italian" };
 
-	specialty = specialMenu();
+	specialty = specialMenu(); // call the print specialty menu which will print the menu and return the selected option
 
 	/*string language, specialty;
 	*
@@ -58,7 +59,6 @@ string specialMenu()
 	cout << "Please enter an option (1 - 5): ";
 	cin >> sOption;
 	// Switch statement outputs and returns the user's choice
-	// third edit
 	switch (sOption)
 	{
 	case 1 :
@@ -81,7 +81,7 @@ string specialMenu()
 		cout << "You entered : " << o5 << endl;
 		return o5;
 		break;
-	}
+	} 
 }
 
 void returnCountry(string arr[])
