@@ -119,7 +119,7 @@ string specialMenu()
 string returnCountry(string arr[], string l)
 {
 	//Use indexes to generate random numbers to determine the two countries of each language
-	//(rand() % (whatever two number)) + 1
+	//(rand() % 2) + N
 
 	if (l == "English")
 	{
