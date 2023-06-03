@@ -24,6 +24,7 @@ int main()
 	cout << "Your chosen country is " << country << endl;
 	cout << "The sample space is amount of languages multiplied by number of specializations." << endl;
 	cout << "5 * 5 = 25" << endl;
+	cout << "The probability of chooseing one language and one occupation is 1/25 which is 4%"
 
 
 
