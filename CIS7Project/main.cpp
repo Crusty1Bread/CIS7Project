@@ -6,6 +6,7 @@ using namespace std;
 
 string langMenu();
 string specialMenu();
+string returnCountry();
 
 string languages[] = { "English", "Spanish", "Arabic", "French", "Italian" };
 string country[] = { "United States", "United Kingdom", "Mexico", "Costa Rica", "Saudi Arabia", "Afghanistan", "France", "Haiti", "Italy", "Sicily" };
@@ -115,13 +116,25 @@ string specialMenu()
 	}
 }
 
-void returnCountry(string arr[])
+string returnCountry(string arr[], string l)
 {
 	//Use indexes to generate random numbers to determine the two countries of each language
-	
+	//(rand() % (whatever two number)) + 1
 
-	switch () 
+	if (l == "English")
 	{
-
+		return arr[rand() % 2];
+	} if (l == "Spanish")
+	{
+		return arr[(rand() % 2) + 2];
+	} if (l == "Arabic")
+	{
+		return arr[(rand() % 2) + 4];
+	} if (l == "French")
+	{
+		return arr[(rand() % 2) + 6];
+	} if (l == "Italian")
+	{
+		return arr[(rand() % 2) + 8];
 	}
 }
