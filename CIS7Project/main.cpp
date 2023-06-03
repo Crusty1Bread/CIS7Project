@@ -9,10 +9,15 @@ string specialMenu();
 
 int main() 
 {
-	string country[] = {"United States", "United Kingdom", "Mexico", "Costa Rica", "Saudi Arabia", "Afghanistan", "France", "Haiti", "Italy", "Sicily" };
+	// variables
+	string specialty;
+
+	// arrays
+	string country[] = { "United States", "United Kingdom", "Mexico", "Costa Rica", "Saudi Arabia", "Afghanistan", "France", "Haiti", "Italy", "Sicily" };
 	string languages[] = { "English", "Spanish", "Arabic", "French", "Italian" };
 
-	
+	specialty = specialMenu(); // call the print specialty menu which will print the menu and return the selected option
+
 	/*string language, specialty;
 	* 
 	* 
@@ -32,9 +37,22 @@ int main()
 
 string langMenu()
 {
+	int lOption;
+	string languages[] = { "English", "Spanish", "Arabic", "French", "Italian" };
 	cout << "Language Options:\n--------------\n";
 	cout << "1. English\n2. Spanish\n3. Arabic\n4. French\n5. Italian";
 	cout << "--------------\n";
+
+	cout << "Please enter an option (1 - 5): ";
+	cin >> lOption;
+
+	switch (lOption)
+	{
+	case 1:
+		cout << "You entered : " << languages[0] << endl;
+		return languages[0];
+		break;
+	}
 
 }
 
