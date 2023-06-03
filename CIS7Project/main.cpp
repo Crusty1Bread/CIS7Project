@@ -54,10 +54,27 @@ string specialMenu()
 	cout << "5. Maternal-Fetal Medicine" << endl;
 	cout << "-------------------" << endl;
 	// Request user input
-	cout << "Please select an option (1 - 5): ";
+	cout << "Please enter an option (1 - 5): ";
 	cin >> sOption;
-
-
+	// Switch statement
+	switch (sOption)
+	{
+	case 1 :
+		cout << "You entered : Cardiology." << endl;
+		break;
+	case 2 :
+		cout << "You entered : Infectious Disease." << endl;
+		break;
+	case 3 :
+		cout << "You entered : Occupational Medicine." << endl;
+		break;
+	case 4 :
+		cout << "You entered : Pediatrics." << endl;
+		break;
+	case 5 :
+		cout << "You entered : Maternal-Fetal Medicine." << endl;
+		break;
+	}
 }
 
 void returnCountry(string arr[])
