@@ -6,7 +6,7 @@ using namespace std;
 
 string langMenu();
 string specialMenu();
-string returnCountry();
+string returnCountry(string language);
 
 string languages[] = { "English", "Spanish", "Arabic", "French", "Italian" };
 string country[] = { "United States", "United Kingdom", "Mexico", "Costa Rica", "Saudi Arabia", "Afghanistan", "France", "Haiti", "Italy", "Sicily" };
@@ -18,6 +18,14 @@ int main()
 	string specialty, language, country;
 
 	specialty = specialMenu(); // call the print specialty menu which will print the menu and return the selected option
+	language = langMenu();
+	country = returnCountry(language);
+
+	cout << "Your chosen country is " << country << endl;
+	cout << "The sample space is amount of languages multiplied by number of specializations." << endl;
+	cout << "5 * 5 = 25" << endl;
+
+
 
 	/*string language, specialty;
 	* 
@@ -40,7 +48,7 @@ string langMenu()
 {
 	int lOption;
 	cout << "Language Options:\n--------------\n";
-	cout << "1. English\n2. Spanish\n3. Arabic\n4. French\n5. Italian";
+	cout << "1. English\n2. Spanish\n3. Arabic\n4. French\n5. Italian\n";
 	cout << "--------------\n";
 
 	cout << "Please enter an option (1 - 5): ";
@@ -116,25 +124,25 @@ string specialMenu()
 	}
 }
 
-string returnCountry(string arr[], string l)
+string returnCountry(string l)
 {
 	//Use indexes to generate random numbers to determine the two countries of each language
 	//(rand() % 2) + N
 
 	if (l == "English")
 	{
-		return arr[rand() % 2];
+		return country[rand() % 2];
 	} if (l == "Spanish")
 	{
-		return arr[(rand() % 2) + 2];
+		return country[(rand() % 2) + 2];
 	} if (l == "Arabic")
 	{
-		return arr[(rand() % 2) + 4];
+		return country[(rand() % 2) + 4];
 	} if (l == "French")
 	{
-		return arr[(rand() % 2) + 6];
+		return country[(rand() % 2) + 6];
 	} if (l == "Italian")
 	{
-		return arr[(rand() % 2) + 8];
+		return country[(rand() % 2) + 8];
 	}
 }
