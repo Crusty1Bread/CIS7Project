@@ -44,35 +44,42 @@ string specialMenu()
 {
 	// variables
 	int sOption;
+	string o1 = "Cardiology", o2 = "Infectious Disease", o3 = "Occupational Medicine", o4 = "Pediatrics", o5 = "Maternal-Fetal Medicine";
 	//Print all medical specialties. Request user input for medical specialty.
 	cout << "Specialty Options:" << endl;
 	cout << "-------------------" << endl;
-	cout << "1. Cardiology" << endl;
-	cout << "2. Infectious Disease" << endl;
-	cout << "3. Occupational Medicine" << endl;
-	cout << "4. Pediatrics" << endl;
-	cout << "5. Maternal-Fetal Medicine" << endl;
+	cout << "1. " << o1 << endl;
+	cout << "2. " << o2 << endl;
+	cout << "3. " << o3 << endl;
+	cout << "4. " << o4 << endl;
+	cout << "5. " << o5 << endl;
 	cout << "-------------------" << endl;
 	// Request user input
 	cout << "Please enter an option (1 - 5): ";
 	cin >> sOption;
-	// Switch statement
+	// Switch statement outputs and returns the user's choice
+	// third edit
 	switch (sOption)
 	{
 	case 1 :
-		cout << "You entered : Cardiology." << endl;
+		cout << "You entered : " << o1 << endl;
+		return o1;
 		break;
 	case 2 :
-		cout << "You entered : Infectious Disease." << endl;
+		cout << "You entered : " << o2 << endl;
+		return o2;
 		break;
 	case 3 :
-		cout << "You entered : Occupational Medicine." << endl;
+		cout << "You entered : " << o3 << endl;
+		return o3;
 		break;
 	case 4 :
-		cout << "You entered : Pediatrics." << endl;
+		cout << "You entered : " << o4 << endl;
+		return o4;
 		break;
 	case 5 :
-		cout << "You entered : Maternal-Fetal Medicine." << endl;
+		cout << "You entered : " << o5 << endl;
+		return o5;
 		break;
 	}
 }
