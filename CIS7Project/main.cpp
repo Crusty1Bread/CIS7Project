@@ -7,14 +7,14 @@ using namespace std;
 string langMenu();
 string specialMenu();
 
+string languages[] = { "English", "Spanish", "Arabic", "French", "Italian" };
+string country[] = { "United States", "United Kingdom", "Mexico", "Costa Rica", "Saudi Arabia", "Afghanistan", "France", "Haiti", "Italy", "Sicily" };
+string o1 = "Cardiology", o2 = "Infectious Disease", o3 = "Occupational Medicine", o4 = "Pediatrics", o5 = "Maternal-Fetal Medicine";
+
 int main() 
 {
 	// variables
-	string specialty;
-
-	// arrays
-	string country[] = { "United States", "United Kingdom", "Mexico", "Costa Rica", "Saudi Arabia", "Afghanistan", "France", "Haiti", "Italy", "Sicily" };
-	string languages[] = { "English", "Spanish", "Arabic", "French", "Italian" };
+	string specialty, language, country;
 
 	specialty = specialMenu(); // call the print specialty menu which will print the menu and return the selected option
 
@@ -38,7 +38,6 @@ int main()
 string langMenu()
 {
 	int lOption;
-	string languages[] = { "English", "Spanish", "Arabic", "French", "Italian" };
 	cout << "Language Options:\n--------------\n";
 	cout << "1. English\n2. Spanish\n3. Arabic\n4. French\n5. Italian";
 	cout << "--------------\n";
@@ -52,6 +51,23 @@ string langMenu()
 		cout << "You entered : " << languages[0] << endl;
 		return languages[0];
 		break;
+	case 2:
+		cout << "You entered : " << languages[1] << endl;
+		return languages[1];
+		break;
+	case 3:
+		cout << "You entered : " << languages[2] << endl;
+		return languages[2];
+		break;
+	case 4:
+		cout << "You entered : " << languages[3] << endl;
+		return languages[3];
+		break;
+	case 5:
+		cout << "You enterd : " << languages[4] << endl;
+		return languages[4];
+		break;
+
 	}
 
 }
