@@ -21,10 +21,10 @@ int main()
 	language = langMenu();
 	country = returnCountry(language);
 
-	cout << "Your chosen country is " << country << endl;
-	cout << "The sample space is amount of languages multiplied by number of specializations." << endl;
+	cout << "\nYour chosen country is " << country << endl;
+	cout << "\nThe sample space is amount of languages multiplied by number of specializations." << endl;
 	cout << "5 * 5 = 25" << endl;
-	cout << "The probability of chooseing one language and one occupation is 1/25 which is 4%"
+	cout << "The probability of chooseing one language and one occupation is 1/25 which is 4%";
 
 
 
@@ -58,23 +58,23 @@ string langMenu()
 	switch (lOption)
 	{
 	case 1:
-		cout << "You entered : " << languages[0] << endl;
+		cout << "\nYou entered : " << languages[0] << endl;
 		return languages[0];
 		break;
 	case 2:
-		cout << "You entered : " << languages[1] << endl;
+		cout << "\nYou entered : " << languages[1] << endl;
 		return languages[1];
 		break;
 	case 3:
-		cout << "You entered : " << languages[2] << endl;
+		cout << "\nYou entered : " << languages[2] << endl;
 		return languages[2];
 		break;
 	case 4:
-		cout << "You entered : " << languages[3] << endl;
+		cout << "\nYou entered : " << languages[3] << endl;
 		return languages[3];
 		break;
 	case 5:
-		cout << "You enterd : " << languages[4] << endl;
+		cout << "\nYou enterd : " << languages[4] << endl;
 		return languages[4];
 		break;
 
@@ -103,23 +103,23 @@ string specialMenu()
 	switch (sOption)
 	{
 	case 1:
-		cout << "You entered : " << o1 << endl;
+		cout << "\nYou entered : " << o1 << endl;
 		return o1;
 		break;
 	case 2:
-		cout << "You entered : " << o2 << endl;
+		cout << "\nYou entered : " << o2 << endl;
 		return o2;
 		break;
 	case 3:
-		cout << "You entered : " << o3 << endl;
+		cout << "\nYou entered : " << o3 << endl;
 		return o3;
 		break;
 	case 4:
-		cout << "You entered : " << o4 << endl;
+		cout << "\nYou entered : " << o4 << endl;
 		return o4;
 		break;
 	case 5:
-		cout << "You entered : " << o5 << endl;
+		cout << "\nYou entered : " << o5 << endl;
 		return o5;
 		break;
 	}
